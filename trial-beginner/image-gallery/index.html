@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <!-- Global Container -->
+    <div class="container">
+        <div class="flex items-center justify-center min-h-screen bg-cyan-50">
+            <!-- Card -->
+            <div class="bg-white p-6 m-3 space-x-10 shadow-2xl rounded-3xl md:p-40">
+                <!-- Menu -->
+                <div class="flex flex-col items-center justify-center space-y-3 md:flex-row md:space-y-0 md:space-x-8 md:mb-24 md:justify-end">
+                    <!-- Items -->
+                    <div class="group">
+                        <a href="#">Vector</a>
+                        <div class="mx-2 mt-2 duration-500 border-b-2 opacity-0 border-black group-hover:opacity-100"></div>
+                    </div>
+
+                    <div class="group">
+                        <a href="#">Illustration</a>
+                        <div class="mx-2 mt-2 duration-500 border-b-2 opacity-0 border-black group-hover:opacity-100"></div>
+                    </div>
+
+                    <div class="group">
+                        <a href="#">Images</a>
+                        <div class="mx-2 mt-2 duration-500 border-b-2 opacity-0 border-black group-hover:opacity-100"></div>
+                    </div>
+
+                    <div class="group">
+                        <a href="#">Icons</a>
+                        <div class="mx-2 mt-2 duration-500 border-b-2 opacity-0 border-black group-hover:opacity-100"></div>
+                    </div>
+                </div>
+
+                <!-- Search Container -->
+                <div class="flex flex-col justify-between space-y-5 md:flex-row md:space-y-0">
+                    <!-- Input Container -->
+                    <div class="flex justify-between border-b">
+                        <input type="text" class="ml-6 border-none md:w-80 placeholder:font-thin focus:outline-none" placeholder="Search">
+                        <button>
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </div>
+
+                    <button class="py-3 px-14 text-lg font-normal text-white bg-black border border-black rounded-md shadow-2xl duration-200 hover:bg-white hover:text-black">
+                        <i class="fa-solid fa-cloud-arrow-up"></i>&nbsp;Upload
+                    </button>
+                </div>
+
+                <!-- Gallery -->
+                <div class="grid gap-4 mt-5 md:grid-cols-3">
+                    <!-- Images -->
+                    <div class="relative group">
+                        <img src="./assets/img/product.jpg" alt="" class="w-72">
+                        <div class="absolute bottom-0 left-0 right-0 p-2 px-4 text-white duration-500 bg-black opacity-0 group-hover:opacity-100 bg-opacity-40">
+                            <div class="flex justify-between w-full">
+                                <div class="font-normal">
+                                    <p class="text-sm">Keyboard 1</p>
+                                    <p class="text-xs">200 likes - 35 shares</p>
+                                </div>
+
+                                <div class="flex items-center">
+                                    <i class="fa-solid fa-bookmark"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative group">
+                        <img src="./assets/img/product2.jpg" alt="" class="w-72">
+                        <div class="absolute bottom-0 left-0 right-0 p-2 px-4 text-white duration-500 bg-black opacity-0 group-hover:opacity-100 bg-opacity-40">
+                            <div class="flex justify-between w-full">
+                                <div class="font-normal">
+                                    <p class="text-sm">Keyboard 2</p>
+                                    <p class="text-xs">200 likes - 35 shares</p>
+                                </div>
+
+                                <div class="flex items-center">
+                                    <i class="fa-solid fa-bookmark"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative group">
+                        <img src="./assets/img/product3.jpg" alt="" class="w-72">
+                        <div class="absolute bottom-0 left-0 right-0 p-2 px-4 text-white duration-500 bg-black opacity-0 group-hover:opacity-100 bg-opacity-40">
+                            <div class="flex justify-between w-full">
+                                <div class="font-normal">
+                                    <p class="text-sm">Keyboard 3</p>
+                                    <p class="text-xs">200 likes - 35 shares</p>
+                                </div>
+
+                                <div class="flex items-center">
+                                    <i class="fa-solid fa-bookmark"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/31cb9938fd.js" crossorigin="anonymous"></script>
+</body>
+</html>

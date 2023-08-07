@@ -1,0 +1,16 @@
+{
+  "name": "image-gallery",
+  "version": "1.0.0",
+  "description": "Image gallery for udemy course",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build" : "tailwindcss -i ./assets/init.css -o ./assets/style.css",
+    "watch" : "tailwindcss -i ./assets/init.css -o ./assets/style.css --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
+  }
+}
